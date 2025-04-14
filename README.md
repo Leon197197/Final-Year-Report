@@ -1,6 +1,8 @@
 # Final-Year-Report
 How to Run the Application
+
 1. Software environment requirements
+   
 (1) Require MS Windows 10 or 11.
 
 (2) Require Outlook application installed.
