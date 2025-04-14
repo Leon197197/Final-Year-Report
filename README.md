@@ -8,7 +8,7 @@ How to Run the Application
    (2) Require Outlook application installed.
 
 2.  Install software
-
+   
    (1) Install Python 3.12.9 or higher.
 
    (2) Install PostgreSQL 15.10 or higher.
