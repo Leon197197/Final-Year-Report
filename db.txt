@@ -1,0 +1,56 @@
+DROP TABLE IF EXISTS public.mail_logs;
+DROP TABLE IF EXISTS public.logs_analysis;
+CREATE TABLE public.logs_analysis (
+    id SERIAL PRIMARY KEY,
+    analysis_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    llm_result VARCHAR(200),
+    folder VARCHAR(200),
+    mail_ReceivedTime TIMESTAMP,
+    mail_sender VARCHAR(200),
+    mail_subject VARCHAR(200),
+    mail_body VARCHAR(1000),
+    level VARCHAR(10),
+    factor_sentiment VARCHAR(10),
+    factor_time VARCHAR(10)
+);
+
+DROP TABLE IF EXISTS public.logs_reply;
+CREATE TABLE public.logs_reply (
+    id SERIAL PRIMARY KEY,
+    reply_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    llm_result VARCHAR(200),
+    reply_topic VARCHAR(200),
+    mail_ReceivedTime TIMESTAMP,
+    mail_sender VARCHAR(200),
+    mail_subject VARCHAR(200),
+    mail_body VARCHAR(1000)
+);
+
+DROP TABLE IF EXISTS public.sentiment_factor;
+CREATE TABLE public.sentiment_factor (
+    id SERIAL PRIMARY KEY,
+    sentiment VARCHAR(200),
+    factor VARCHAR(10)
+);
+insert into public.sentiment_factor(id,sentiment,factor) values(1,'Anger','3');
+insert into public.sentiment_factor(id,sentiment,factor) values(2,'Disgust','3');
+insert into public.sentiment_factor(id,sentiment,factor) values(3,'Fear','3');
+insert into public.sentiment_factor(id,sentiment,factor) values(4,'Sadness','2');
+insert into public.sentiment_factor(id,sentiment,factor) values(5,'Surprise','1');
+insert into public.sentiment_factor(id,sentiment,factor) values(6,'Anticipation','1');
+insert into public.sentiment_factor(id,sentiment,factor) values(7,'Trust','0');
+insert into public.sentiment_factor(id,sentiment,factor) values(8,'Joy','0');
+insert into public.sentiment_factor(id,sentiment,factor) values(9,'Other','0');
+commit;
+
+DROP TABLE IF EXISTS public.time_factor;
+CREATE TABLE public.time_factor (
+    id SERIAL PRIMARY KEY,
+    time_class VARCHAR(200),
+    factor VARCHAR(10)
+);
+
+insert into public.time_factor(time_class,factor) values('Today','3');
+insert into public.time_factor(time_class,factor) values('Tomorrow','2');
+insert into public.time_factor(time_class,factor) values('Other','1');
+commit;

@@ -1,0 +1,23 @@
+What is the urgency level from the email domain student.bham.ac.uk?
+Urgent
+
+What is the urgency level from the email address uk.visas.and.immigration.home.office@notifications.service.gov.uk?
+Urgent
+
+What is the urgency level of an email with a deadline of next week?
+Other
+
+What is the urgency level of an email containing 'emergency meeting'?
+Urgent
+
+What is the urgency level of an email containing 'emergency meeting'?
+Urgent
+
+What is the urgency level of an email containing a 'training notification'?
+Urgent
+
+What is the urgency level of an email containing a 'training notification'?
+Urgent
+
+What is the urgency level of an email containing 'data breach'?
+Urgent
