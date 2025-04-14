@@ -9,11 +9,11 @@ How to Run the Application
 
 2.  Install software
    
-   (1) Install Python 3.12.9 or higher.
+      (1) Install Python 3.12.9 or higher.
 
-   (2) Install PostgreSQL 15.10 or higher.
+      (2) Install PostgreSQL 15.10 or higher.
 
-   (3) Unzip the zip package of the application into a folder.
+      (3) Unzip the zip package of the application into a folder.
 
 3. Configure and Execute
  
